@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
+
+/* shared styles */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+.bg-color {
+  background-color: black;
+}
+.display-flex {
+  display: flex;
+}
+.btn-primary {
+  width: 224px;
+  height: 54px;
+  border-radius: 42px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  background-color: #e6533c;
+  border: none;
+  padding: auto;
+}
+
+/* header styles */
+.header-margin {
+  margin-left: 190px;
+}
+.linear-gradient {
+  background-image: linear-gradient(
+    rgba(17, 17, 17, 1),
+    rgba(119, 119, 119, 0)
+  );
+}
+/* navbar styles */
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar .links {
+  width: 500px;
+  height: 46px;
+  font-size: 1.125rem;
+  border: 1px solid rgb(255, 255, 255, 0.1);
+  border-radius: 39px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+}
+.navbar li {
+  list-style: none;
+}
+.home {
+  text-align: center;
+  background-color: #e6533c;
+  border-radius: 46px;
+  padding: 12px 24px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+.navbar > h3 {
+  color: #e6533c;
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-style: italic;
+}
+/* banner styles */
+.banner {
+  gap: 222px;
+  margin-left: 253px;
+}
+/* banner-content style */
+.banner-title {
+  font-size: 4.9rem;
+  font-weight: 900;
+  line-height: 120%;
+  color: white;
+  margin-bottom: 28px;
+}
+.banner-title span {
+  font-family: "Miama", sans-serif;
+  color: white;
+  font-size: 10rem;
+  font-weight: 400;
+}
+.banner-description {
+  color: #ffffff50;
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  margin-bottom: 28px;
+}
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  margin-left: 14px;
+}
+/* banner-img styles */
+.box-one {
+  width: 193px;
+  height: 98px;
+  color: white;
+  background-color: #ffffff10;
+  border-radius: 12px;
+}
+.box-two {
+  width: 206px;
+  height: 96px;
+  color: white;
+  background-color: #ffffff10;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.box-two .content {
+}
+.box-two h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  line-height: 0px;
+}
+.box-two p {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: #ffffff65;
+  line-height: 0px;
+}
+.box-two .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e6533c;
+}
+/* main styles */
+/* footer styles */
