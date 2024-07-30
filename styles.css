@@ -45,6 +45,9 @@
   align-items: center;
   padding-top: 57px;
 }
+.menu-bar {
+  display: none;
+}
 .navbar .links {
   width: 550px;
   height: 46px;
@@ -95,6 +98,7 @@
   font-weight: 400;
 }
 .banner-description {
+  width: 520px;
   color: #ffffff50;
   font-size: 1rem;
   line-height: 24px;
@@ -106,7 +110,7 @@
   border: 1px solid white;
   margin-left: 14px;
 }
-/* banner-img styles */
+/* banner-boxes styles */
 .box-one {
   width: 193px;
   height: 98px;
@@ -168,3 +172,55 @@
 }
 /* main styles */
 /* footer styles */
+/* responsive for phone */
+@media screen and (max-width: 576px) {
+  /* navbar styles */
+  .navbar {
+    text-align: center;
+    gap: 170px;
+  }
+  .navbar .links {
+    display: none;
+  }
+  .menu-bar {
+    display: block;
+    color: white;
+    font-size: large;
+  }
+
+  /* banner styles */
+  .banner {
+    flex-direction: column;
+  }
+  .banner-title {
+    font-size: 2.25rem;
+  }
+  .banner-title span {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  .banner-description {
+    width: 274px;
+  }
+  /* banner-boxes styles */
+  .box-one {
+    left: 220px;
+    top: 535px;
+  }
+  .box-two {
+    left: 32px;
+    top: 715px;
+  }
+
+  /* banner buttons styles */
+  .banner-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .btn-primary {
+    width: 40vw;
+  }
+  .secondary-btn {
+    width: 40vw;
+  }
+}
