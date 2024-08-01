@@ -233,11 +233,112 @@
   width: 366px;
   height: 312px;
   background-image: url(images/run.jpg);
-  background-size: cover;
+  background-size: 300%;
   background-repeat: no-repeat;
   border-radius: 18px;
+  background-position-x: -500px;
+  background-position-y: -100px;
 }
 
+/* training-exercise styles */
+.training-exercises {
+  width: 65vw;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+.training-exercises > p {
+  margin-top: 14px;
+  margin-bottom: 58px;
+}
+.exercises {
+  height: 403px;
+  display: grid;
+  grid-template-columns: 25% 45% 30%;
+}
+.exercises span {
+  display: none;
+}
+.exercise-1 {
+  background: url(images/exercise1.jpg), rgba(6, 255, 210, 0.5);
+  background-size: cover;
+  background-blend-mode: color-burn;
+}
+.exercise-1 > p {
+  position: relative;
+  top: 157px;
+  left: 24px;
+}
+.exercise-2 {
+  background: url(images/exercise2.png), rgba(255, 0, 0, 0.3);
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-position: center;
+}
+.exercise-2 > p {
+  position: relative;
+  left: 31px;
+  top: 25px;
+}
+.exercise-3 {
+  background: url(images/exercise3.png), rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-position: center;
+}
+.exercise-3 > p {
+  position: relative;
+  left: 27px;
+  top: 146px;
+}
+.exercise-4 {
+  width: 150%;
+  background: url(images/exercise4.png), rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-position-y: top;
+}
+.exercise-4 > p {
+  position: relative;
+  width: 176px;
+  height: 34px;
+  left: 290px;
+  top: 25.5px;
+}
+.exercise-5 {
+  width: 60%;
+  background: url(images/exercise5.jpg), rgba(66, 255, 0, 0.3);
+  background-size: cover;
+  background-blend-mode: color-burn;
+  margin-left: 170px;
+  background-position: center;
+}
+.exercise-5 > p {
+  position: relative;
+  width: 176px;
+  height: 34px;
+  left: 34px;
+  top: 144.5px;
+}
+.exercise-6 {
+  width: 120%;
+  background: url(images/exercise6.jpg), rgba(0, 71, 255, 0.3);
+  background-size: cover;
+  background-blend-mode: color-burn;
+  margin-left: -80px;
+  background-position-y: center;
+}
+.exercise-6 > p {
+  position: relative;
+  width: 176px;
+  height: 34px;
+  left: 38px;
+  top: 142.5px;
+}
+.exercises p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
 /* footer styles */
 /* responsive for phone */
 @media screen and (max-width: 576px) {
@@ -328,5 +429,37 @@
   .run-extra-img {
     width: 287px;
     height: 170px;
+  }
+
+  /* training-exercise styles */
+  .training-exercises {
+    width: 90vw;
+    margin-top: 60px;
+  }
+  .exercises {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  .exercises p {
+    display: none;
+  }
+
+  .exercises span {
+    display: flex;
+    color: white;
+    opacity: 0.5;
+    justify-content: center;
+  }
+
+  .exercise-4 {
+    width: 100%;
+  }
+  .exercise-5 {
+    width: 100%;
+    margin-left: auto;
+  }
+  .exercise-6 {
+    width: 100%;
+    margin-left: auto;
   }
 }
