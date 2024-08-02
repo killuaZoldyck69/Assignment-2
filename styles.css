@@ -12,6 +12,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  color: white;
 }
 .bg-color {
   background-color: black;
@@ -43,11 +44,54 @@
   line-height: 20px;
   letter-spacing: 0.3px;
 }
+table {
+  border-collapse: collapse;
+  line-height: 120%;
+  width: 22vw;
+  height: 25vh;
+  margin-top: 52px;
+}
+th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 30px;
+}
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  padding-left: 30px;
+}
+input,
+select,
+option {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  height: 48px;
+  font-size: 1rem;
+  line-height: 22px;
+  padding-left: 20px;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+option {
+  background-color: tomato;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
 
 /* header styles */
 .linear-gradient {
   background: linear-gradient(
-    180deg,
+    360deg,
     rgb(17, 17, 17, 1),
     rgba(119, 119, 119, 0) 100%
   );
@@ -339,6 +383,42 @@
   font-weight: 500;
   color: white;
 }
+
+/* bmi-calculator styles */
+.bmi-calculator {
+  margin: 88px 0px;
+}
+.bmi-heading {
+  width: 35vw;
+  text-align: justify;
+  margin: 0px auto;
+}
+.bmi-container {
+  background-color: rgba(34, 34, 34, 1);
+  margin-top: 88px;
+  padding: 52px 0px;
+  justify-content: space-around;
+}
+.bmi-container h3 {
+  font-size: 28px;
+}
+.calculate > p {
+  margin-top: 14px;
+  margin-bottom: 34px;
+}
+.calculate {
+  width: 35vw;
+}
+.calculate > form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 14px;
+  row-gap: 12px;
+  margin-bottom: 34px;
+}
+#activity {
+  width: 205%;
+}
 /* footer styles */
 /* responsive for phone */
 @media screen and (max-width: 576px) {
@@ -429,6 +509,7 @@
   .run-extra-img {
     width: 287px;
     height: 170px;
+    background-position-x: -400px;
   }
 
   /* training-exercise styles */
@@ -461,5 +542,37 @@
   .exercise-6 {
     width: 100%;
     margin-left: auto;
+  }
+
+  /* bmi-calculator styles */
+  .bmi-calculator {
+    margin: 50px 0px;
+  }
+  .bmi-heading {
+    width: 80vw;
+  }
+  .bmi-container {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 42px;
+    padding-left: 20px;
+  }
+  table {
+    width: 80vw;
+    height: 25vh;
+    margin-top: 52px;
+  }
+  .calculate {
+    width: 85vw;
+  }
+  .calculate > form {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 12px;
+    row-gap: 12px;
+    margin-bottom: 34px;
+  }
+  #activity {
+    width: 207%;
   }
 }

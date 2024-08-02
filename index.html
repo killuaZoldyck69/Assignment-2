@@ -21,7 +21,7 @@
         </div>
         <div class="links display-flex">
           <li class="home">
-            <a href=""><span>HomeExercise </span></a>
+            <a href=""><span>Home</span></a>
           </li>
           <li><a href="">Service</a></li>
           <li><a href="">Contact</a></li>
@@ -149,6 +149,69 @@
           <div class="exercise-6">
             <p>Leg Press: Works the quadriceps and glutes</p>
             <span>Exercise 6</span>
+          </div>
+        </div>
+      </section>
+      <!-- bmi-calculator -->
+      <section class="bmi-calculator">
+        <div class="bmi-heading">
+          <h2 class="common-title">BMI Calculator</h2>
+          <p class="p-style">
+            We believe fitness should be accessible to everyone, everywhere,
+            regardless of income or access to a gym.
+          </p>
+        </div>
+        <div class="bmi-container display-flex">
+          <div class="chart">
+            <h3 class="common-title">BMI Calculator Chart</h3>
+            <table class="p-style">
+              <tr>
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </tr>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr>
+                <td>30.0 - and Above</td>
+                <td>Obese</td>
+              </tr>
+            </table>
+          </div>
+          <div class="calculate">
+            <h3 class="common-title">Calculate your BMI</h3>
+            <p class="p-style">
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym.
+            </p>
+            <form action="">
+              <input type="number" placeholder="Height/cm" />
+              <input type="number" placeholder="Weight/kg" />
+              <input type="number" placeholder="Age" />
+              <select name="sex" id="sex">
+                <option value="" selected disabled>Sex</option>
+                <option value="male">Male</option>
+                <option value="fa-bars">Female</option>
+              </select>
+              <select name="activity" id="activity">
+                <option value="" disabled selected>
+                  Select an activity factor
+                </option>
+                <option value="runnig">Running</option>
+                <option value="gym">Gym</option>
+                <option value="yoga">Yoga</option>
+              </select>
+            </form>
+            <button class="btn-primary">Calculate</button>
           </div>
         </div>
       </section>
