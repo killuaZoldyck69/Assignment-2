@@ -419,6 +419,55 @@ button:hover {
 #activity {
   width: 205%;
 }
+
+/* our-team styles */
+.our-team-heading {
+  text-align: center;
+}
+.trainers {
+  background-color: rgba(25, 25, 25, 1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+  width: 65vw;
+  height: 604px;
+  margin: 0px auto;
+  padding: 20px;
+  border-radius: 18px;
+  margin-top: 58px;
+  margin-bottom: 88px;
+}
+.trainers > div {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: color-burn;
+  background-size: cover;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 39px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+.trainer-1 {
+  background-image: url(images/trainer1.png);
+}
+.trainer-2 {
+  background-image: url(images/trainer2.png);
+}
+.trainer-3 {
+  background-image: url(images/trainer3.png);
+}
+.trainer-4 {
+  background-image: url(images/trainer4.png);
+}
+.trainer-5 {
+  background-image: url(images/trainer5.png);
+}
+.trainer-6 {
+  background-image: url(images/trainer6.png);
+}
 /* footer styles */
 /* responsive for phone */
 @media screen and (max-width: 576px) {
@@ -509,7 +558,9 @@ button:hover {
   .run-extra-img {
     width: 287px;
     height: 170px;
-    background-position-x: -400px;
+    background-size: 150%;
+    background-position-x: -120px;
+    background-position-y: -40px;
   }
 
   /* training-exercise styles */
@@ -574,5 +625,24 @@ button:hover {
   }
   #activity {
     width: 207%;
+  }
+
+  /* our-team styles */
+  .trainers {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    width: 90vw;
+    padding: 15px;
+    margin-bottom: 60px;
+  }
+  .trainers > div {
+    padding-left: 10px;
+    font-size: 1rem;
+  }
+  .trainer-4 {
+    background-image: url(images/trainer4.png);
+    background-position: center;
+    background-size: 10%;
   }
 }
