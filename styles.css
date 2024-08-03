@@ -364,7 +364,6 @@ button:hover {
   top: 144.5px;
 }
 .exercise-6 {
-  width: 120%;
   background: url(images/exercise6.jpg), rgba(0, 71, 255, 0.3);
   background-size: cover;
   background-blend-mode: color-burn;
