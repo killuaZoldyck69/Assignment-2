@@ -115,7 +115,8 @@ button:hover {
   align-items: center;
   padding: 0px 10px;
 }
-.navbar li {
+.navbar li,
+.get-started {
   list-style: none;
 }
 .home {
@@ -124,11 +125,12 @@ button:hover {
   border-radius: 46px;
   padding: 12px 24px;
 }
-.navbar a {
+.navbar a,
+.get-started a {
   text-decoration: none;
   color: white;
 }
-.navbar > h3 {
+.navbar-title {
   color: #e6533c;
   font-size: 2.25rem;
   font-weight: 800;
@@ -467,7 +469,52 @@ button:hover {
 .trainer-6 {
   background-image: url(images/trainer6.png);
 }
+
 /* footer styles */
+footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-content {
+  padding-top: 66px;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-fitness {
+  width: 25vw;
+}
+.footer-content h1 {
+  font-size: 4.4rem;
+  margin-bottom: 20px;
+}
+.get-started > h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 120%;
+  margin-bottom: 39px;
+}
+.get-started > li {
+  margin-bottom: 20px;
+}
+.get-started a {
+  font-size: 1.43rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer-foot > hr {
+  width: 80vw;
+  margin: 0px auto;
+  margin-top: 79px;
+  margin-bottom: 36px;
+}
+.footer-foot > p {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 36px;
+}
+.footer-foot > hr {
+  width: 80vw;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 /* responsive for phone */
 @media screen and (max-width: 576px) {
   /* navbar styles */
@@ -643,5 +690,23 @@ button:hover {
     background-image: url(images/trainer4.png);
     background-position: center;
     background-size: 10%;
+  }
+
+  /* footer styles */
+  .footer-content {
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-left: 30px;
+  }
+  .footer-fitness {
+    width: 90vw;
+  }
+  .footer-foot > hr {
+    width: 90vw;
+  }
+  .footer-foot > p {
+    font-size: 1rem;
   }
 }
